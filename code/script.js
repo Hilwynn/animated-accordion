@@ -4,9 +4,10 @@ function toggle() {
   iconEl[0].classList.toggle("fa-plus");
   iconEl[0].classList.toggle("fa-minus");
 
+  // Get the next sibling, i.e. the description div
   var descEl = this.nextElementSibling;
-    console.log(descEl); // Get the next sibling, i.e. the description div
 
+  // Get the height of the "description" div so we can fade it in
   var getHeight = function () {
     descEl.style.display = 'block'; // Make it visible
     var height = descEl.scrollHeight + 'px'; // Get its height
@@ -28,7 +29,6 @@ function toggle() {
 
   // When the transition is complete, hide it
     window.setTimeout(function () {
-      console.log(clickedEl);
       clickedEl.classList.remove('active');
     }, 350);
   } else {
