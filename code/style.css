@@ -1,6 +1,42 @@
+* {
+  -webkit-box-sizing: -border-box;
+          box-sizing: -border-box;
+          margin: 0;
+          padding: 0;
+}
+
 html {
-  background: #f2f1f4;
+  background: rgb(129,168,184);
   color: #19171c;
+}
+
+h1 {
+  padding: 20px 10px;
+}
+
+i {
+  left: 2px;
+  position: absolute;
+  top: 1.75px;
+}
+
+.accordion {
+  background: rgb(242, 247, 249);
+  margin: 100px auto;
+  padding: 25px;
+  width: 40%;
+}
+
+.title {
+  padding: 5px;
+}
+
+.title:nth-child(4n+2) {
+  background: rgb(219,230,236);
+}
+
+.title:nth-child(4n+4) {
+  background: rgb(232,243,248);
 }
 
 .active + .description {
@@ -9,4 +45,14 @@ html {
 
 .description {
   display: none;
+}
+
+.circle {
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  position: relative;
+  vertical-align: center;
+  width: 15px;
 }
