@@ -11,6 +11,7 @@ html {
 }
 
 h1 {
+  font-family: 'Rubik', sans-serif;
   padding: 20px 10px;
 }
 
@@ -28,23 +29,44 @@ i {
 }
 
 .title {
+  font-family: 'Rubik', sans-serif;
   padding: 5px;
 }
 
 .title:nth-child(4n+2) {
-  background: rgb(219,230,236);
+  background: hsl(201, 30%, 80%);
+}
+
+.title:nth-child(4n+2):hover {
+  background: hsl(201, 30%, 75%);
+  cursor: pointer;
 }
 
 .title:nth-child(4n+4) {
-  background: rgb(232,243,248);
+  background: hsl(198, 50%, 90%);
+}
+
+.title:nth-child(4n+4):hover {
+  background: hsl(198, 50%, 85%);
+  cursor: pointer;
 }
 
 .active + .description {
   display: block;
+	height: auto;
 }
 
 .description {
   display: none;
+  font-family: 'Roboto', sans-serif;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 350ms ease-in-out;
+  transition: height 350ms ease-in-out;
+}
+
+.description-inner {
+  margin: 10px;
 }
 
 .circle {
